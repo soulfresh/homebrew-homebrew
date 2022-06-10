@@ -1,5 +1,9 @@
 # Legacy formula for Tmux 3.2
 # https://github.com/Homebrew/homebrew-core/blob/e44425df5a8b3c8c24073486fa7e355f3ac19657/Formula/tmux.rb
+#
+# Tmux 3.3 introduced an issue in my tmux + vim + iterm where cursors would not
+# update between insert and normal mode.
+# https://github.com/tmux/tmux/issues/3218
 class Tmux < Formula
   desc "Terminal multiplexer"
   homepage "https://tmux.github.io/"
